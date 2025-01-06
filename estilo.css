@@ -272,11 +272,30 @@ html{
 }
 
 
+.boton-descargar {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.boton-descargar .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #545252; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton-descargar .btn:hover {
+    background-color: #b61cb1; /* Color de fondo al hacer hover */
+}
+
 
 .btn-certificado {
     display: inline-block; /* Mantiene el botón en línea */
     padding: 10px 20px;
-    background-color: #f205af; /* Color negro */
+    background-color: #545252; /* Color negro */
     color: white; /* Color del texto */
     text-decoration: none; /* Sin subrayado */
     border-radius: 5px; /* Bordes redondeados */
@@ -284,6 +303,7 @@ html{
     margin: 10px auto; /* Centra el botón y añade margen */
     width: auto; /* Ajusta el ancho automáticamente */
 }
+
 
 .btn-certificado:hover {
     background-color: #000000; /* Color al pasar el mouse */
