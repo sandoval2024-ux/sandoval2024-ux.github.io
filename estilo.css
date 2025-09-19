@@ -214,7 +214,7 @@ html{
 }
 /* SECCION S K I L L S */
 .skills{
-    background-color: #252A2E;
+    background-color: #171717;
     color: #fff;
     padding: 50px 20px;
 }
@@ -254,7 +254,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #1CB698;
+    background-color: #a30a82;
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +264,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1CB698;
+    background-color: #a30a82;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
