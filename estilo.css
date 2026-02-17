@@ -595,3 +595,37 @@ footer .arriba{
     }
 }
 
+
+.cert-title {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    background: #111;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.cert-title:hover {
+    background: #333;
+}
+
+.arrow {
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.cert-title.active .arrow {
+    transform: rotate(180deg);
+}
+
+.cert-content {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    max-height: 1000px; /* visible por defecto */
+}
+
+.cert-content.hidden {
+    max-height: 0;
+}
+
