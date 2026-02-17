@@ -6838,24 +6838,33 @@ de informes</h3>
 
 
              <div class="contenido-seccion">
-                    <h2>TALLERES Y TESTS (2)</h2>
-                    <div class="galeria">
-                        <div class="proyecto">
-                            <img src="img/10.jpg" alt="">
-                            <div class="overlay">
-                                <h3>Test de Mecanografía</h3>
-                                <p></p>
-                                <a href="files/10.pdf" class="btn-certificado"><strong>Ver Certificado</strong></a>
-                            </div>
-                        </div>
-                        <div class="proyecto">
-                            <img src="img/26.jpg" alt="">
-                            <div class="overlay">
-                                <h3>Taller de Inteligencia Artificial para Inteligencias Reales</h3>
-                                <p>2 horas</p>
-                                <a href="files/26.pdf" class="btn-certificado"><strong>Ver Certificado</strong></a>
-                            </div>
-                        </div>
+    <h2 class="cert-title">
+        TALLERES Y TESTS (2)
+        <span class="arrow">▼</span>
+    </h2>
+
+    <div class="galeria cert-content">
+        <div class="proyecto">
+            <img src="img/10.jpg" alt="">
+            <div class="overlay">
+                <h3>Test de Mecanografía</h3>
+                <p></p>
+                <a href="files/10.pdf" class="btn-certificado">
+                    <strong>Ver Certificado</strong>
+                </a>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <img src="img/26.jpg" alt="">
+            <div class="overlay">
+                <h3>Taller de Inteligencia Artificial para Inteligencias Reales</h3>
+                <p>2 horas</p>
+                <a href="files/26.pdf" class="btn-certificado">
+                    <strong>Ver Certificado</strong>
+                </a>
+            </div>
+        </div>
                 <div class="contenido-seccion">
 
 
@@ -6886,5 +6895,15 @@ de informes</h3>
         </div>
     </footer>
     <script src="script.js"></script>
+
+                    <script>
+document.querySelectorAll(".cert-title").forEach(title => {
+    title.addEventListener("click", () => {
+        const content = title.nextElementSibling;
+        content.classList.toggle("hidden");
+        title.classList.toggle("active");
+    });
+});
+</script>
 </body>
 </html>
