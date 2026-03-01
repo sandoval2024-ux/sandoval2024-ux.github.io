@@ -629,3 +629,37 @@ footer .arriba{
     max-height: 0;
 }
 
+/* SECCION ENTIDADES */
+.entidades {
+    background-color: #000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.entidades h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* GRID DE 8 COLUMNAS */
+.grid-entidades {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .grid-entidades {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-entidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
