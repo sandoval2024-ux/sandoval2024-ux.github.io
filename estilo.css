@@ -646,11 +646,11 @@ footer .arriba{
 .grid-entidades {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 15px;
+    gap: 20px;
     max-width: 1400px;
     margin: auto;
+    align-items: center;
 }
-
 /* RESPONSIVE */
 @media (max-width: 1200px) {
     .grid-entidades {
@@ -659,6 +659,28 @@ footer .arriba{
 }
 
 @media (max-width: 768px) {
+
+
+    /* BOTONES ENTIDADES */
+.btn-entidad {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid #00aaff;
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* HOVER estilo moderno */
+.btn-entidad:hover {
+    background-color: #00aaff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,170,255,0.5);
+}
     .grid-entidades {
         grid-template-columns: repeat(2, 1fr);
     }
